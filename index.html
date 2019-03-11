@@ -19,6 +19,8 @@
 
   <!-- Custom styles for this template -->
   <link href="css/one-page-wonder.css" rel="stylesheet">
+  <!-- For audio player -->
+  <link href="css/audioPlayer.css" rel="stylesheet">
 
 </head>
 
@@ -114,32 +116,34 @@
           <div class="p-5">
             <h2 class="display-4" style="color:#3E5C76">Listen</h2>
 
-            <div class="container">
-    <div class="column add-bottom">
-        <div id="mainwrap">
-            <div id="nowPlay">
-                <span id="npAction">Paused...</span><span id="npTitle"></span>
-            </div>
-            <div id="audiowrap">
-                <div id="audio0">
-                    <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
+            <div class="row">
+              <div class="col-lg-4">
+                <h2 class="display-5" style="color:#1D2D44">Don't Worry About It</h2>
+              </div>
+              <div class="col-lg-8">
+                <audio controls preload="metadata" style=" width:300px;">
+                  <source src="audio/Don't Worry About It.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio><br />
                 </div>
-                <div id="tracks">
-                    <a id="btnPrev">&larr;</a><a id="btnNext">&rarr;</a>
+              </div>
+
+            <div class="row">
+              <div class="col-lg-2">
+                <h2 class="display-5" style="color:#1D2D44">Fission</h2>
+              </div>
+              <div class="col-lg-2">
+              </div>
+              <div class="col-lg-8">
+                <audio controls preload="metadata" style=" width:300px;">
+                  <source src="audio/fission.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio><br />
                 </div>
-            </div>
-            <div id="plwrap">
-                <ul id="plList"></ul>
-            </div>
+              </div>
+
+          </div>
         </div>
-    </div>
-    <div class="column add-bottom center">
-        <p>Music by <a href="http://www.mythium.net/">Mythium</a></p>
-        <p>Download: <a href="https://archive.org/download/mythium/mythium_vbr_mp3.zip">zip</a> / <a href="https://archive.org/download/mythium/mythium_archive.torrent">torrent</a></p>
-    </div>
-</div>
-      </div>
-    </div>
   </section>
 
   <!-- Footer -->
@@ -153,6 +157,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- For audio player -->
+  <script src="js/audioPlayer.js"></script>
 
 </body>
 
