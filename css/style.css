@@ -2,3 +2,20 @@ img.warp{
 
   filter:grayscale(50%);
 }
+
+.smed{
+
+  font-size: 60px;
+}
+.smed2{
+  font-size: 30px;
+}
+
+a, a:link{
+  color:black;
+
+}
+
+a:hover{
+  color:#3E5C76
+}
